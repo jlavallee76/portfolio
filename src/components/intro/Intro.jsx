@@ -8,7 +8,10 @@ export default function Intro() {
     useEffect(() => {
         init(textRef.current, {
             showCursor: true,
-            strings: ["Developer", "Photographer", "Traveller", "Sports Fan", "Fantasy Football Legend", "Dog Dad"]
+            backDelay: 2000,
+            typeSpeed: 75,
+            backSpeed:50,
+            strings: ["developer.", "photographer.", "traveller.", "student.", "sports fan.", "fantasy football legend.", "dog dad.", "gamer.", "skateboarder."]
         })
     }, [])
     return (
@@ -21,8 +24,9 @@ export default function Intro() {
 
             <div className="right">
                 <div className="wrapper">
-                    <h1>Hi, I'm Josh!</h1>
-                    <h3><span ref={textRef}></span></h3>
+                    <h2>Welcome, I'm</h2>
+                    <h1>Josh Lavallee.</h1>
+                    <h3>I am a <span ref={textRef}></span></h3>
                 </div>
                 <a href="#about">
                     <img src="assets/down.png" alt="down arrow" />

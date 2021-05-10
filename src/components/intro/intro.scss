@@ -35,20 +35,37 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            padding-left: 80px;
+            padding-left: 280px;
 
             h1 {
                 color: $main-color;
-                font-size: 60px;
+                font-size: 110px;
                 margin: 10px 0px;
             }
 
+            h2 {
+                font-size: 70px;
+            }
+
             h3 {
-                font-size: 35px;
+                font-size: 45px;
 
                 span {
                     font-size: inherit;
                     color: $vapor-pink;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+                @keyframes blink {
+                    60% {
+                        opacity: 1;
+                    }
+                    
+                    100% {
+                        opacity: 0;
+                    }
                 }
             }
         }
