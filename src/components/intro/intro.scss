@@ -1,5 +1,74 @@
 @import "../../global.scss";
 
 .intro {
-    background-color: $main-color;
+    display: flex;
+    background-color: whitesmoke;
+
+    .left {
+        display: flex;
+        align-items: center;
+        flex: 0.4;
+
+        .imageContainer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            float: right;
+            width: 100%;
+            height: 900px;
+            background-color: $main-color;
+            border-radius: 0px 50px 50px 0px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .right {
+        position: relative;
+        flex: 0.6;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding-left: 80px;
+
+            h1 {
+                color: $main-color;
+                font-size: 60px;
+                margin: 10px 0px;
+            }
+
+            h3 {
+                font-size: 35px;
+
+                span {
+                    font-size: inherit;
+                    color: $vapor-pink;
+                }
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+
+            img {
+                width: 100px;
+                animation: arrowBlink 1.5s infinite;
+                color: $main-color;
+
+                @keyframes arrowBlink {
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
 }
