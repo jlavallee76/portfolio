@@ -1,5 +1,91 @@
 @import "../../global.scss";
 
 .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $vapor-pink;
+
+    h1 {
+        font-size: 80px;
+        margin-top: 50px;
+        color: $main-color;
+    }
+
+    ul {
+        display: flex;
+        margin: 10px;
+        padding: 0px;
+        list-style: none;
+
+        li {
+            font-size: 18px;
+            font-weight: 600;
+            margin-right: 50px;
+            padding: 7px;
+            border-radius: 10px 0px 10px 0px;
+            cursor: pointer;
+
+            &.active {
+                background-color: $main-color;
+                color: white;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-wrap: wrap;
+            width: 200px;
+            height: 200px;
+            margin: 80px 20px 30px 20px;
+            padding: 50px;
+            border-radius: 0px 20px 0px 50px;
+            border: 6px solid $main-color;
+            transition: all 1s ease;
+            cursor: pointer;
+
+            h3 {
+                position: absolute;
+                font-size: 25px;
+            }
+
+            a {
+                color: $vapor-pink-vibrant;
+                font-weight: 800;
+                text-decoration: none;
+                z-index: 0;
+                opacity: 0;
+            }
+            &:hover {
+                background-color: $main-color;
+                img {
+                    opacity: .25;
+                    z-index: 0;
+                }
+
+                a {
+                    opacity: 1;
+                    z-index: 1;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    }
 }
