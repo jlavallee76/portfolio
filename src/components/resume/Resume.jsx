@@ -21,7 +21,7 @@ export default function Resume() {
                                     </div>
                                     <h2>{item.title}</h2>
                                     <p>{item.desciption}</p>
-                                    <span><a href="{item.url}">{item.urldesc}</a></span>
+                                    <span><a href={item.url} target="_blank">{item.urldesc}</a></span>
                                 </div>
                             </div>
 
