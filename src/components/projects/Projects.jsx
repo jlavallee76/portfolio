@@ -64,7 +64,7 @@ export default function Projects() {
                     <div className="item">
                         <img src={project.img} alt={project.title} />
                         <h3>
-                            <a href={project.url} target="_blank">{project.title}</a>
+                            <a href={project.url} target="_blank" rel="noreferrer">{project.title}</a>
                         </h3>
                     </div>
                 ))}
