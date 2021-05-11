@@ -1,5 +1,61 @@
 @import "../../global.scss";
 
 .about {
-    background-color: #9476A2;
+    display: flex;
+    background-color: $vapor-pink-vibrant;
+
+    .left {
+        position: relative;
+        flex: 0.4;
+
+        .rainingIcons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding-left: 280px;
+
+            img {
+                width: 100px;
+                padding: 10px;
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+
+            img {
+                width: 100px;
+                animation: arrowBlink 1.5s infinite;
+                color: $main-color;
+
+                @keyframes arrowBlink {
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        flex: 0.6;
+
+        .contentContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 55px;
+            float: right;
+            width: 100%;
+            height: 900px;
+            background-color: $main-color;
+            border-radius: 50px 0px 0px 50px;
+        }
+    }
 }

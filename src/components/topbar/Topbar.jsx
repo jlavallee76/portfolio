@@ -1,4 +1,3 @@
-import React from 'react'
 import "./topbar.scss"
 import {Phone, Mail} from "@material-ui/icons"
 
@@ -15,7 +14,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
 
                     <div className="itemContainer">
                         <Mail className="icon"/>
-                        <span>joshlavallee@gmail.com</span>
+                        <span>joshlavallee11@gmail.com</span>
                     </div>
                 </div>
                 <div className="right">

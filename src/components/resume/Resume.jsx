@@ -1,4 +1,3 @@
-import React from 'react'
 import "./resume.scss"
 
 export default function resume() {

@@ -1,62 +1,73 @@
-import React from 'react'
 import "./projects.scss"
+import {useState, useEffect } from 'react'
+import ProjectList from '../project_list/ProjectList'
+import { recentProjects, mobileProjects, webProjects, photoProjects } from '../../projectData'
 
-export default function projects() {
+export default function Projects() {
+    const [selected, setSelected] = useState("recent")
+    const [projectData, setData] = useState([])
+    const projectList = [
+        {
+            id: "recent",
+            title: "Recent"
+        },
+        {
+            id: "mobile",
+            title: "Mobile Applications"
+        },
+        {
+            id: "web",
+            title: "Web Applications"
+        },
+        {
+            id: "photo",
+            title: "Photography"
+        },
+    ]
+
+    useEffect(() => {
+        switch(selected) {
+            case "recent":
+                setData(recentProjects)
+                break;
+            case "mobile":
+                setData(mobileProjects)
+                break;
+            case "web":
+                setData(webProjects)
+                break;
+            case "photo":
+                setData(photoProjects)
+                break;
+            default:
+                setData(recentProjects)
+                break;
+        }
+    }, [selected]);
+
     return (
         <div className="projects" id="projects">
             <h1>Projects</h1>
             <ul>
-                <li className="active">Most Recent</li>
-                <li>Mobile Applications</li>
-                <li>Web Applications</li>
-                <li>Photography</li>
+                {projectList.map((project) => (
+                    <ProjectList 
+                        id={project.id}
+                        title ={project.title} 
+                        active={selected === project.id} 
+                        setSelected={setSelected} 
+                    />
+                ))}
             </ul>
 
             <div className="container">
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>
-                        <a href="https://github.com/jlavallee76/Water-Assessment-Project">Water Assessment Project</a>
-                    </h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>
-                        <a href="https://github.com/jlavallee76/Crockodile">Crockodile</a>
-                    </h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
-                <div className="item">
-                    <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png" alt="palceholder" />
-                    <h3>Water Assessment Project</h3>
-                </div>
+                {projectData.map((project) => (
+                    <div className="item">
+                        <img src={project.img} alt={project.title} />
+                        <h3>
+                            <a href={project.url}>{project.title}</a>
+                        </h3>
+                    </div>
+                ))}
             </div>
         </div>
     )
