@@ -84,7 +84,7 @@ export const resumeData = [
                 details: [
                     {
                         id: 1,
-                        desciption: "Presented annually, each spring, to students who have completed an Applied Computer Education program selected on the basis of outstanding academic achievement." 
+                        description: "Presented annually, each spring, to students who have completed an Applied Computer Education program selected on the basis of outstanding academic achievement." 
                     }
                 ]
             }]
@@ -103,15 +103,15 @@ export const resumeData = [
                 details: [
                     {
                         id: 1,
-                        desciption: "Unloaded product from shipping containers" 
+                        description: "Unloaded product from shipping containers" 
                     },
                     {
                         id: 2,
-                        desciption: "Laundered items of clothing and prepared them for sorting" 
+                        description: "Laundered items of clothing and prepared them for sorting" 
                     },
                     {
                         id: 3,
-                        desciption: "Organized, packaged and prepared winter bundles for delivery" 
+                        description: "Organized, packaged and prepared winter bundles for delivery" 
                     }
                 ]
             }]
@@ -130,23 +130,23 @@ export const resumeData = [
                 details: [
                     {
                         id: 1,
-                        desciption: "Maintained applications in the Shopify ecosystem adhering to high coding standards using JavaScript and PHP" 
+                        description: "Maintained applications in the Shopify ecosystem adhering to high coding standards using JavaScript and PHP" 
                     },
                     {
                         id: 2,
-                        desciption: "Developed E2E tests for e-commerce applications using CodeceptJS" 
+                        description: "Developed E2E tests for e-commerce applications using CodeceptJS" 
                     },
                     {
                         id: 3,
-                        desciption: "Produced clear and concise user documentation using Confluence" 
+                        description: "Produced clear and concise user documentation using Confluence" 
                     },
                     {
                         id: 4,
-                        desciption: "Participated in and led team standup meetings & retrospectives" 
+                        description: "Participated in and led team standup meetings & retrospectives" 
                     },
                     {
                         id: 4,
-                        desciption: "Applied agile methodologies to projects daily to work rapidly as part of a team and as an individual" 
+                        description: "Applied agile methodologies to projects daily to work rapidly as part of a team and as an individual" 
                     }
                 ]
             }]

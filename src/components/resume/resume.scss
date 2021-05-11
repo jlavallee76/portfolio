@@ -23,8 +23,9 @@
     .slider {
         display: flex;
         position: absolute;
-        left: 0;
+        left: 0vw;
         height: 60%;
+        transition: all 1.5s ease-out;
     
         .container {
             display: flex;
@@ -67,7 +68,7 @@
                             background-color: $vapor-blue;
 
                             img {
-                                width: 125px;
+                                width: 100px;
                             }
                         }
 
