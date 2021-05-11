@@ -1,5 +1,151 @@
 @import "../../global.scss";
 
 .resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     background-color: $vapor-orange;
+
+    .arrow {
+        height: 60px;
+        position: absolute;
+
+        &.left {
+            left: 250px;
+        }
+
+        &.right {
+            right: 250px;
+        }
+    }
+
+    .slider {
+        display: flex;
+        position: absolute;
+        left: 0;
+        height: 60%;
+    
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+
+            .item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 65%;
+                height: 100%;
+                background-color: whitesmoke;
+                border-radius: 30px;
+
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 30px;
+                    height: 80%;
+                    flex: 5;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+
+                        .imgContainer {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 160px;
+                            height: 160px;
+                            border-radius: 50%;
+                            background-color: $vapor-blue;
+
+                            img {
+                                width: 125px;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 50px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 600;
+                            text-decoration: underline;
+                            cursor: pointer;
+
+                            a {
+                                color: inherit;
+                                text-decoration: none;
+                                
+                                &:hover {
+                                    color: $main-color
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    height: 100%;
+                    flex: 7;
+
+                    .container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 80%;
+                        padding-left: 50px;
+
+                        h1 {
+                            font-size: 50px;
+                        }
+
+                        h2 {
+                            font-size: 30px;
+                            padding-bottom: 5px;
+                        }
+
+                        h3 {
+                            font-size: 15px;
+                            padding-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            padding-bottom: 10px
+                        }
+
+                        ul {
+                            li {
+                                font-weight: 400;
+                                padding: 3px;
+                            }
+                        }
+
+                        span {
+                            font-size: 15px;
+                            font-weight: 600;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
