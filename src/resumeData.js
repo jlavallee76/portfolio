@@ -74,7 +74,7 @@ export const resumeData = [
         id: 2,
         icon: "assets/award.png",
         title: "Acheivements",
-        desciption: "Some type of description",
+        desciption: "",
         url: "https://catalogue.rrc.ca/Programs/WPG/Fulltime/BUSGF-DP/AwardsandScholarships",
         info: [
             {
@@ -93,7 +93,7 @@ export const resumeData = [
         id: 3,
         icon: "assets/volunteering.png",
         title: "Volunteer Experience",
-        desciption: "Some type of description",
+        desciption: "",
         url: "",
         info: [
             {
@@ -120,7 +120,7 @@ export const resumeData = [
         id: 4,
         icon: "assets/workexp.png",
         title: "Work Experience",
-        desciption: "Some type of description",
+        desciption: "",
         url: "",
         info: [
             {

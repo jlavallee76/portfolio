@@ -48,6 +48,7 @@
 
         .contentContainer {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 55px;
@@ -56,6 +57,31 @@
             height: 900px;
             background-color: $main-color;
             border-radius: 50px 0px 0px 50px;
+
+            h1 {
+                font-size: 80px;
+                color: $vapor-pink-vibrant;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                color: white;
+                padding: 20px;
+
+                strong {
+                    color: $vapor-pink-vibrant;
+                }
+
+                a {
+                    color: $vapor-pink-vibrant;
+                    font-weight: 600;
+
+                    &:visited {
+                        color: $vapor-pink-vibrant;
+                    }
+                }
+            }
         }
     }
 }
