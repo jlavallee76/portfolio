@@ -24,7 +24,7 @@
 
         a {
             position: absolute;
-            bottom: 75px;
+            bottom: 50px;
             left: 40%;
 
             img {
@@ -40,6 +40,10 @@
                     100% {
                         opacity: 0;
                     }
+                }
+
+                @include mobile {
+                    width: 60px;
                 }
             }
         }
@@ -58,20 +62,20 @@
             padding: 55px;
             float: right;
             width: 100%;
-            height: 900px;
+            height: 650px;
             background-color: $main-color;
             border-radius: 50px 0px 0px 50px;
 
             h1 {
-                font-size: 80px;
+                font-size: 50px;
                 color: $vapor-pink-vibrant;
                 margin-bottom: 20px;
             }
 
             p {
-                font-size: 20px;
+                font-size: 16px;
                 color: white;
-                padding: 20px;
+                padding: 12px;
 
                 strong {
                     color: $vapor-pink-vibrant;

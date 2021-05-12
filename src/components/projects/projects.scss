@@ -20,11 +20,12 @@
     }
 
     .arrow {
+        padding-top: 80px;
         height: 60px;
 
         &.bottom {
             height: 100px;
-            bottom: 100px;
+            bottom: 50px;
 
             width: 100px;
             animation: arrowBlink 1.25s infinite;

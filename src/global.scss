@@ -15,4 +15,13 @@ $vapor-pink-vibrant: #D6224FB4;
 $vapor-orange-vibrant: #f0443b;
 $vapor-blue-vibrant: #4b7eff;
 $vapor-purple-vibrant: #9500ff;
-$vapor-teal-vibrant: #01A7A7
+$vapor-teal-vibrant: #01A7A7;
+$vapor-green-vibrant: #0CC524;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

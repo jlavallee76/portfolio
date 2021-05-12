@@ -5,7 +5,7 @@ import { resumeData } from '../../resumeData'
 export default function Resume() {
     const [currentSlide, setCurrentSlide] = useState(0)
     const handleClick = (direction) => {
-        direction === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide -1 : 2) :
+        direction === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide -1 : 4) :
         setCurrentSlide(currentSlide < resumeData.length - 1 ? currentSlide + 1 : 0)
     }
     return (

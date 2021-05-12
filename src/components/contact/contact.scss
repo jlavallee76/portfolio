@@ -4,12 +4,24 @@
     display: flex;
     background-color: $main-color;
 
+    @include mobile {
+        flex-direction: column;
+    }
+
     .left {
         display: flex;
         justify-content: center;
         align-items: center;
         flex: 1;
         height: 100%;
+
+        @include mobile {
+            flex: .4;
+        }
+
+        img {
+            width: 50%;
+        }
     }
 
     .right {
@@ -32,6 +44,10 @@
                 font-size: 80px;
                 color: $vapor-teal-vibrant;
                 margin-bottom: 20px;
+
+                @include mobile {
+                    font-size: 40px;
+                }
             }
 
             input {
@@ -39,6 +55,10 @@
                 height: 50px;
                 font-size: 20px;
                 padding: 5px;
+
+                @include mobile {
+                    width: 300px;
+                }
             }
 
             textarea {
@@ -47,6 +67,10 @@
                 font-size: 20px;
                 padding: 5px;
                 border: 2px solid $main-color;
+
+                @include mobile {
+                    width: 300px;
+                }
             }
 
             button {
@@ -61,6 +85,10 @@
                 border-radius: 0px 0px 20px 20px;
                 transition: all 1s ease;
 
+                @include mobile {
+                    width: 310px;
+                }
+
                 &:hover {
                     background-color: $vapor-pink-vibrant;
                 }
@@ -68,6 +96,13 @@
                 &:focus {
                     outline: none;
                 }
+            }
+
+            span {
+                margin-top: 15px;
+                font-size: 16px;
+                font-weight: 600;
+                color: $vapor-green-vibrant;
             }
         }
     }
