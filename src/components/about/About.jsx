@@ -22,7 +22,7 @@ export default function about() {
                         Naturally, I took an interest in athletics early on and played many different sports as a kid and into my teenage years, including lacrosse, baseball, basketball, 
                         and hockey. Throughout this time, I was instilled with a strong work ethic and learned the importance of <strong>teamwork</strong>.
                     </p>
-                    <p> As a teenager, I transitioned to an individual sport. I focused full-time on skateboarding, where I learned so many skills that shaped me as a person. Skating taught 
+                    <p> As a teenager, I transitioned to an individual sport. I focused full-time on skateboarding, where I learned many skills and invaluable lessons that shaped me as a person. Skating taught 
                         me how to be <strong>creative</strong> and to look at my surroundings in unique ways. It taught me <strong>perserverance</strong>, being comfortable with failure, 
                         and using it as a learning opportunity. Most importantly, skateboarding taught me how to <strong>communicate</strong> effectively with a wide variety of people of 
                         different ages, backgrounds, and points of view.
