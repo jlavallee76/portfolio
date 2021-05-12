@@ -16,6 +16,12 @@
     transition: all 1s ease;
     z-index: 2;
 
+    @include mobile {
+        width: 100%;
+        right: -410px;
+        padding-right: 0px;
+    }
+
     &.active {
         right: 0;
     }
@@ -26,6 +32,10 @@
         list-style: none;
         color: whitesmoke;
         width: 80%;
+
+        @include mobile {
+            width: 60%;
+        }
     }
 
     li {
