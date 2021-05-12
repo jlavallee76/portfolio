@@ -10,6 +10,7 @@ export default function Resume() {
     }
     return (
         <div className="resume" id="resume">
+            <h1>Resume</h1>
             <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
                 {resumeData.map((item) => 
                     <div className="container">
@@ -42,6 +43,9 @@ export default function Resume() {
             </div>
             <img className="left arrow" src="assets/left.png" alt="left arrow" onClick={() => handleClick("left")} />
             <img className="right arrow" src="assets/right.png" alt="right arrow" onClick={() => handleClick("right")}/>
+            <a href="#projects">
+                <img className="bottom arrow"src="assets/down.png" alt="down arrow" />
+            </a>
         </div>
     )
 }

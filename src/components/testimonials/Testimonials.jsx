@@ -20,6 +20,9 @@ export default function Testimonials() {
                     </div>
                 </div> )}
             </div>
+            <a href="#contact">
+                <img className="bottom arrow"src="assets/down.png" alt="down arrow" />
+            </a>
         </div>
     )
 }

@@ -56,7 +56,7 @@
                 }
 
                 .ityped-cursor {
-                    animation: blink 1s infinite;
+                    animation: blink 1.25s infinite;
                 }
                 @keyframes blink {
                     60% {
@@ -72,7 +72,7 @@
 
         a {
             position: absolute;
-            bottom: 10px;
+            bottom: 75px;
             left: 40%;
 
             img {

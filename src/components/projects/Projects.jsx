@@ -69,6 +69,10 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
+
+            <a href="#testimonials">
+                <img className="bottom arrow"src="assets/down.png" alt="down arrow" />
+            </a>
         </div>
     )
 }

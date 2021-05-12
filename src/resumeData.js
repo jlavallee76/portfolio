@@ -149,6 +149,97 @@ export const resumeData = [
                         description: "Applied agile methodologies to projects daily to work rapidly as part of a team and as an individual" 
                     }
                 ]
-            }]
+            },
+            {
+                id: 2,
+                name: "Yoshigrams",
+                date: "Photographer & Social Media Strategist | August 2012 - September 2020",
+                details: [
+                    {
+                        id: 1,
+                        description: "Built a social media following on Instagram over a three-year period of over 9000 and growing, 95% residing in Winnipeg, Manitoba (@yoshigrams)" 
+                    },
+                    {
+                        id: 2,
+                        description: "Established relationships with tourism boards as well as local and international brands" 
+                    },
+                    {
+                        id: 3,
+                        description: "Created and maintained website, including e-commerce print shop where I sell prints and books across Canada and internationally" 
+                    },
+                    {
+                        id: 4,
+                        description: "Received and inspected weekly shipments of product to ensure quality" 
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: 4,
+        icon: "assets/workexp.png",
+        title: "Work Experience",
+        desciption: "",
+        url: "",
+        info: [
+            {
+                id: 1,
+                name: "Imperial Group Inc.",
+                date: "Warehouse Manager | August 2013 - September 2020",
+                details: [
+                    {
+                        id: 1,
+                        description: "Coordinated the timely delivery of products to clients" 
+                    },
+                    {
+                        id: 2,
+                        description: "Managed and monitored warehouse inventory levels" 
+                    },
+                    {
+                        id: 3,
+                        description: "Purchased product according to inventory needs and sales projections" 
+                    },
+                    {
+                        id: 4,
+                        description: "Received and inspected weekly shipments of product to ensure quality" 
+                    }
+                ]
+            },
+            {
+                id: 2,
+                name: "Magellan Luxury Hotels",
+                date: "Sales Consultant | January 2013 - August 2013",
+                details: [
+                    {
+                        id: 1,
+                        description: "Handled client calls and provided exceptional personalized service" 
+                    },
+                    {
+                        id: 2,
+                        description: "Multitasked between phone, live chat, e-mail, sales system, and web browsers" 
+                    },
+                    {
+                        id: 3,
+                        description: "Processed reservations using Sabre sales system" 
+                    },
+                    {
+                        id: 4,
+                        description: "Communicated effectively to team leads, coworkers, and hotel staff" 
+                    },
+                    {
+                        id: 5,
+                        description: "Qualified sales opportunities by identifying customer needs, desires, and budgets" 
+                    },
+                    {
+                        id: 6,
+                        description: "Overcame sales objections, turned inquiries into sales, and up-sold product" 
+                    },
+                    {
+                        id: 7,
+                        description: "Closed sales and met daily sales targets" 
+                    }
+                ]
+            }
+        ]
     }
 ];

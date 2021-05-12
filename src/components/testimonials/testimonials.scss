@@ -13,6 +13,29 @@
         color: $vapor-pink-vibrant;
     }
 
+    .arrow {
+        height: 60px;
+        position: flex;
+
+        &.bottom {
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+            animation: arrowBlink 1.25s infinite;
+            color: $main-color;
+
+            @keyframes arrowBlink {
+                60% {
+                    opacity: 1;
+                }
+                
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
     .container {
         display: flex;
         justify-content: center;

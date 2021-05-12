@@ -19,6 +19,29 @@
         list-style: none;
     }
 
+    .arrow {
+        height: 60px;
+
+        &.bottom {
+            height: 100px;
+            bottom: 100px;
+
+            width: 100px;
+            animation: arrowBlink 1.25s infinite;
+            color: $main-color;
+
+            @keyframes arrowBlink {
+                60% {
+                    opacity: 1;
+                }
+                
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
     .container {
         display: flex;
         flex-wrap: wrap;

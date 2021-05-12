@@ -5,7 +5,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: $vapor-orange;
+    background-color: $main-accent;
+
+    h1 {
+        position: absolute;
+        font-size: 80px;
+        top: 50px;
+        color: $vapor-pink-vibrant;
+    }
 
     .arrow {
         height: 60px;
@@ -17,6 +24,25 @@
 
         &.right {
             right: 250px;
+        }
+
+        &.bottom {
+            height: 100px;
+            bottom: 50px;
+
+            width: 100px;
+            animation: arrowBlink 1.25s infinite;
+            color: $main-color;
+
+            @keyframes arrowBlink {
+                60% {
+                    opacity: 1;
+                }
+                
+                100% {
+                    opacity: 0;
+                }
+            }
         }
     }
 
@@ -41,7 +67,7 @@
                 height: 100%;
                 background-color: whitesmoke;
                 border-radius: 30px;
-                box-shadow: 0px 0px 35px -8px $vapor-pink;
+                box-shadow: 0px 0px 35px -8px $accent-color-light;
 
                 .left {
                     display: flex;
@@ -65,7 +91,7 @@
                             width: 160px;
                             height: 160px;
                             border-radius: 50%;
-                            background-color: $vapor-blue;
+                            background-color: $accent-color-light;
 
                             img {
                                 width: 100px;

@@ -24,15 +24,19 @@
 
         a {
             position: absolute;
-            bottom: 10px;
+            bottom: 75px;
             left: 40%;
 
             img {
                 width: 100px;
-                animation: arrowBlink 1.5s infinite;
+                animation: arrowBlink 1.25s infinite;
                 color: $main-color;
 
                 @keyframes arrowBlink {
+                    60% {
+                        opacity: 1;
+                    }
+                    
                     100% {
                         opacity: 0;
                     }
