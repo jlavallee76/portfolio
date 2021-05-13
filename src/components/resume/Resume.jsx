@@ -10,7 +10,7 @@ export default function Resume() {
     }
     return (
         <div className="resume" id="resume">
-            <h1>Resume</h1>
+            <h1>Resume.</h1>
             <div className="slider" style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
                 {resumeData.map((item) => 
                     <div className="container">

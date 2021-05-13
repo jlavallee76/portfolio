@@ -16,8 +16,11 @@
         flex: 0.4;
 
         @include mobile {
-            height: 400px;
+            height: 100px;
             width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-right: 40px;
         }
 
         .imageContainer {
@@ -32,18 +35,14 @@
             border-radius: 0px 50px 50px 0px;
 
             @include mobile {
-                align-items: center;
+                padding-top: 0px;
                 float: none;
-                height: 300px;
-                background-color: whitesmoke;
+                height: 200px;
+                background-color: $main-color;
             }
 
             img {
                 height: 100%;
-
-                @include mobile {
-                    height: 80%;
-                }
             }
         }
     }
@@ -95,6 +94,7 @@
 
                 @include mobile {
                     font-size: 20px;
+                    width: 100%;
                 }
 
                 span {

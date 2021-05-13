@@ -73,7 +73,7 @@ export const resumeData = [
     {
         id: 2,
         icon: "assets/award.png",
-        title: "Acheivements",
+        title: "Awards",
         desciption: "",
         url: "https://catalogue.rrc.ca/Programs/WPG/Fulltime/BUSGF-DP/AwardsandScholarships",
         info: [
@@ -153,7 +153,7 @@ export const resumeData = [
             {
                 id: 2,
                 name: "Yoshigrams",
-                date: "Photographer & Social Media Strategist | August 2012 - September 2020",
+                date: "Photographer | August 2012 - September 2020",
                 details: [
                     {
                         id: 1,

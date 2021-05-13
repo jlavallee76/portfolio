@@ -17,7 +17,7 @@ export default function about() {
             </div>
             <div className="right">
                 <div className="contentContainer">
-                    <h1>My Story</h1>
+                    <h1>My Story.</h1>
                     <p> I grew up in an athletic household, my dad being a football player and my mom a hockey player, among dozens of other sports that they both played, sports around 24/7. 
                         Naturally, I took an interest in athletics early on and played many different sports as a kid and into my teenage years, including lacrosse, baseball, basketball, 
                         and hockey. Throughout this time, I was instilled with a strong work ethic and learned the importance of <strong>teamwork</strong>.

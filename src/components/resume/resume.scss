@@ -12,6 +12,11 @@
         font-size: 80px;
         top: 50px;
         color: whitesmoke;
+
+        @include mobile {
+            top: 15px;
+            font-size: 40px;
+        }
     }
 
     .arrow {
@@ -20,10 +25,21 @@
 
         &.left {
             left: 250px;
+
+            @include mobile {
+                left: 15px;
+                height: 20px;
+            }
         }
 
         &.right {
             right: 250px;
+
+            @include mobile {
+                right: 15px;
+                height: 20px;
+            }
+            
         }
 
         &.bottom {
@@ -33,6 +49,12 @@
             width: 100px;
             animation: arrowBlink 1.25s infinite;
             color: $main-color;
+
+            @include mobile {
+                height: 60px;
+                width: 60px;
+                left: 42%;
+            }
 
             @keyframes arrowBlink {
                 60% {
@@ -52,6 +74,7 @@
         left: 0vw;
         height: 60%;
         transition: all 2.5s ease;
+
     
         .container {
             display: flex;
@@ -69,6 +92,13 @@
                 border-radius: 30px;
                 box-shadow: 0px 0px 35px -8px $accent-color-light;
 
+                @include mobile {
+                    width: 80%;
+                    height: 60%;
+                    margin: 5px 0px;
+                    flex-direction: column;
+                }
+
                 .left {
                     display: flex;
                     align-items: center;
@@ -77,12 +107,25 @@
                     height: 80%;
                     flex: 4;
 
+                    @include mobile {
+                        padding-left: 0px;
+                        padding-top: 15px;
+                        width: 90%;
+                        flex: 3;
+                    }
+
                     .leftContainer {
                         width: 90%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
+
+                        @include mobile {
+                            flex-direction: row;
+                            align-items: center;
+                            width: 100%;
+                        }
 
                         .imgContainer {
                             display: flex;
@@ -93,17 +136,35 @@
                             border-radius: 50%;
                             background-color: $accent-color-light;
 
+                            @include mobile {
+                                width: 50px;
+                                height: 50px;
+                            }
+
                             img {
                                 width: 100px;
+
+                                @include mobile {
+                                    width: 80%;
+                                }
                             }
                         }
 
                         h2 {
                             font-size: 30px;
+
+                            @include mobile {
+                                font-size: 20px;
+                            }
+                            
                         }
 
                         p {
                             font-size: 16px;
+
+                            @include mobile {
+                                display: none;
+                            }
                         }
 
                         span {
@@ -111,6 +172,10 @@
                             font-weight: 600;
                             text-decoration: underline;
                             cursor: pointer;
+
+                            @include mobile {
+                                display: none;
+                            }
 
                             a {
                                 color: inherit;
@@ -129,7 +194,11 @@
                     flex-direction: column;
                     justify-content: space-evenly;
                     height: 100%;
-                    flex: 8;
+                    flex: 9;
+
+                    @include mobile {
+                        flex: 10;
+                    }
 
                     .container {
                         display: flex;
@@ -138,22 +207,43 @@
                         width: 80%;
                         padding-left: 50px;
 
+                        @include mobile {
+                            padding-left: 25px;
+                        }
+
                         h2 {
                             font-size: 30px;
                             padding-bottom: 5px;
+
+                            @include mobile {
+                                font-size: 15px;
+                            }
                         }
 
                         h3 {
                             font-size: 15px;
                             padding-bottom: 20px;
+
+                            @include mobile {
+                                padding-bottom: 2px;
+                                font-size: 9px;
+                            }
                         }
 
                         p {
                             font-size: 15px;
-                            padding-bottom: 10px
+                            padding-bottom: 10px;
+
+                            @include mobile {
+                                display: none;
+                            }
                         }
 
                         ul {
+
+                            @include mobile {
+                                display: none;
+                            }
                             li {
                                 font-size: 15px;
                                 font-weight: 400;

@@ -7,11 +7,20 @@
     align-items: center;
     background-color: $vapor-teal-vibrant;
 
+    @include mobile {
+        flex-direction: row;
+    }
+
     h1 {
         font-size: 80px;
         margin-top: 50px;
         margin-bottom: 20px;
         color: $vapor-pink-vibrant;
+
+        @include mobile {
+            margin-top: 15px;
+            font-size: 40px;
+        }
     }
 
     .arrow {
