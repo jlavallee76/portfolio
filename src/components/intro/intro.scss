@@ -122,6 +122,10 @@
             bottom: 50px;
             left: 40%;
 
+            @include mobile {
+                bottom: 160px;
+            }
+
             img {
                 width: 100px;
                 animation: arrowBlink 1.5s infinite;

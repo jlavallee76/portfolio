@@ -37,6 +37,7 @@
             left: 40%;
 
             @include mobile {
+                bottom: 120px;
                 left: 15%;
             }
 

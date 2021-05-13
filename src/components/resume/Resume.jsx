@@ -41,8 +41,8 @@ export default function Resume() {
                     </div>
                 )}
             </div>
-            <img className="left arrow" src="assets/left.png" alt="left arrow" onClick={() => handleClick("left")} />
-            <img className="right arrow" src="assets/right.png" alt="right arrow" onClick={() => handleClick("right")}/>
+            <img className="left arrow" src="assets/left_white.png" alt="left arrow" onClick={() => handleClick("left")} />
+            <img className="right arrow" src="assets/right_white.png" alt="right arrow" onClick={() => handleClick("right")}/>
             <a href="#projects">
                 <img className="bottom arrow"src="assets/down.png" alt="down arrow" />
             </a>

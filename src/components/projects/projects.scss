@@ -8,11 +8,10 @@
 
     h1 {
         font-size: 80px;
-        margin-top: 50px;
+        margin-top: 40px;
         color: $main-color;
 
         @include mobile {
-            margin-top: 15px;
             font-size: 40px;
         }
     }
@@ -45,7 +44,7 @@
             @include mobile {
                 width: 60px;
                 height: 60px;
-                padding-top: 60px;
+                padding-top: 150px;
             }
 
             @keyframes arrowBlink {
@@ -89,6 +88,7 @@
                 flex-wrap: wrap;
                 width: 130px;
                 height: 120px;
+                margin: 20px;
             }
 
             h3 {

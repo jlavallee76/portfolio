@@ -10,11 +10,10 @@
     h1 {
         position: absolute;
         font-size: 80px;
-        top: 50px;
+        top: 40px;
         color: whitesmoke;
 
         @include mobile {
-            top: 15px;
             font-size: 40px;
         }
     }
@@ -54,6 +53,7 @@
                 height: 60px;
                 width: 60px;
                 left: 42%;
+                bottom: 120px;
             }
 
             @keyframes arrowBlink {
@@ -198,6 +198,7 @@
 
                     @include mobile {
                         flex: 10;
+                        width: 100%;
                     }
 
                     .container {

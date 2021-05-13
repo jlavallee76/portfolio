@@ -7,10 +7,6 @@
     align-items: center;
     background-color: $vapor-teal-vibrant;
 
-    @include mobile {
-        flex-direction: row;
-    }
-
     h1 {
         font-size: 80px;
         margin-top: 50px;
@@ -18,8 +14,9 @@
         color: $vapor-pink-vibrant;
 
         @include mobile {
-            margin-top: 15px;
             font-size: 40px;
+            margin-bottom: 5px;
+            margin-top: 0px;
         }
     }
 
@@ -33,6 +30,14 @@
             padding: 50px;
             animation: arrowBlink 1.25s infinite;
             color: $main-color;
+
+            @include mobile {
+                height: 60px;
+                width: 60px;
+                padding: 0px;
+                padding-bottom: 120px;
+
+            }
 
             @keyframes arrowBlink {
                 60% {
@@ -53,6 +58,12 @@
         width: 100%;
         height: 100%;
 
+        @include mobile {
+            flex-direction: column;
+            padding: 50px;
+            border: 1px solid red;
+        }
+
         .card {
             display: flex;
             flex-direction: column;
@@ -63,11 +74,23 @@
             border-radius: 10px;
             box-shadow: 0px 0px 25px -8px black;
             transition: all 1s ease;
+            
+
+            @include mobile {
+                width: 320px;
+                height: 40%;
+                margin: 5px;
+            }
 
             &.featured {
                 width: 350px;
                 height: 80%;
                 margin: 0px 30px;
+
+                @include mobile {
+                    width: 320px;
+                    height: 45%;
+                }
             }
 
             &:hover {
@@ -79,9 +102,13 @@
                 justify-content: center;
                 align-items: center;
 
+                @include mobile {
+                    display: none;
+                }
+
                 img {
                     &.left, &.right {
-                        height: 25px;
+                        height: 15px;
                     }
 
                     &.user {
@@ -91,6 +118,11 @@
                         border-radius: 50%;
                         object-fit: cover;
                         margin: 0px 30px;
+
+                        @include mobile {
+                            height: 30px;
+                            width: 30px;
+                        }
                     }
                 }
             }
@@ -101,6 +133,13 @@
                 margin: 10px;
                 background-color: $vapor-pink;
                 border-radius: 10px;
+
+                @include mobile {
+                    font-size: 8px;
+                    padding: 5px;
+                    margin: 2px;
+                    width: 95%;
+                }
             }
 
             .bottom {
@@ -111,10 +150,18 @@
 
                 h3 {
                     font-size: 25px;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
                 }
 
                 h4 {
                     font-size: 15px;
+                    
+                    @include mobile {
+                        font-size: 10px;
+                    }
                 }
             }
         }
