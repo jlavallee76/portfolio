@@ -7,8 +7,8 @@ import Resume from './components/resume/Resume'
 import Projects from './components/projects/Projects'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
-
 import {useState} from "react"
+import { withBounce } from 'react-motions';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,9 +16,9 @@ function App() {
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu className="menu" menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
+      <div className="sections" >
         <Intro />
-        <About />
+        <About className="about" menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Resume />
         <Projects />
         <Testimonials />

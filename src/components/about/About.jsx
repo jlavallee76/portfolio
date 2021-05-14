@@ -1,15 +1,15 @@
 import "./about.scss"
 
-export default function about() {
+export default function About() {
     return (
         <div className="about" id="about">
             <div className="left">
                 <div className="rainingIcons">
-                    <img src="assets/skateboard.png" alt="skateboard" />
-                    <img src="assets/football.png" alt="football" />
-                    <img src="assets/code.png" alt="laptop" />
-                    <img src="assets/travel.png" alt="travel" />
-                    <img src="assets/camera.png" alt="camera" />
+                    <img src="assets/skateboard_purple.png" alt="skateboard" />
+                    <img src="assets/football_purple.png" alt="football" />
+                    <img src="assets/code_purple.png" alt="laptop" />
+                    <img src="assets/travel_purple.png" alt="travel" />
+                    <img src="assets/camera_purple.png" alt="camera" />
                 </div>
                 <a href="#resume">
                     <img src="assets/down.png" alt="down arrow" />

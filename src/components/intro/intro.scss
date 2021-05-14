@@ -2,7 +2,7 @@
 
 .intro {
     display: flex;
-    background-color: whitesmoke;
+    background: whitesmoke;
 
     @include mobile {
         flex-direction: column;
@@ -99,7 +99,7 @@
 
                 span {
                     font-size: inherit;
-                    color: $vapor-pink;
+                    color: $vapor-pink-vibrant;
                 }
 
                 .ityped-cursor {

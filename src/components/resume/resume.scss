@@ -5,15 +5,16 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: $main-color;
+    background: $main-color;
 
     h1 {
         position: absolute;
         font-size: 80px;
-        top: 40px;
+        top: 2rem;
         color: whitesmoke;
 
         @include mobile {
+            top: 6rem;
             font-size: 40px;
         }
     }

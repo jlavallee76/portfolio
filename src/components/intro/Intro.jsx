@@ -1,6 +1,7 @@
 import "./intro.scss"
 import { useEffect, useRef} from 'react'
 import { init } from 'ityped'
+import { withBounce } from 'react-motions';
 
 export default function Intro() {
     const textRef = useRef();
@@ -14,11 +15,12 @@ export default function Intro() {
             strings: ["developer.", "photographer.", "traveller.", "student.", "sports fan.", "fantasy football legend.", "dog dad.", "gamer.", "skateboarder."]
         })
     }, [])
+
     return (
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imageContainer">
-                    <img src="assets/logo.png" alt="logo" />
+                <img className="logo" src="assets/logo.png" alt="logo" />
                 </div>
             </div>
 

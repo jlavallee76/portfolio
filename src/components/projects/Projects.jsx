@@ -13,15 +13,15 @@ export default function Projects() {
         },
         {
             id: "mobile",
-            title: "Mobile Applications"
+            title: "Mobile"
         },
         {
             id: "web",
-            title: "Web Applications"
+            title: "Web"
         },
         {
             id: "photo",
-            title: "Photography"
+            title: "Photo"
         },
     ]
 

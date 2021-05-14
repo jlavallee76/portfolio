@@ -2,7 +2,7 @@
 
 .about {
     display: flex;
-    background-color: $vapor-pink-vibrant;
+    background: $vapor-pink-vibrant;
 
     .left {
         position: relative;
@@ -81,10 +81,10 @@
             align-items: center;
             justify-content: center;
             padding: 55px;
-            float: right;
             width: 100%;
             height: 650px;
             background-color: $main-color;
+            right: -340px;
             border-radius: 50px 0px 0px 50px;
 
             @include mobile {
