@@ -11,7 +11,7 @@ export const testimonialData = [
     },
     {
         id: 1,
-        name: "Jieno Legac",
+        name: "Jieno Lagac",
         position: "Infrastructure Support Specialist at Northfield IT",
         img: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
         url: "https://github.com/jlavallee76/Water-Assessment-Project",
